@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio </title>
+  <title>Portfolio</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -17,7 +17,8 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,13 +30,6 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: FolioOne
-  * Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
-  * Updated: Aug 23 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="portfolio-page">
@@ -43,35 +37,53 @@
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
-      <!-- <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-      <img src="assets/img/logo.webp" alt="">
-      <h1 class="sitename">FolioOne</h1> 
-    </a> -->
+      <!-- Logo -->
+      <!--
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="assets/img/logo.webp" alt="">
+        <h1 class="sitename">FolioOne</h1>
+      </a>
+      -->
 
+      <!-- Navigation -->
       <nav id="navmenu" class="navmenu">
-         <ul>
+        <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Other</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+
+          <li class="dropdown">
+            <a href="#">
+              <span>Other</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i>
+            </a>
+
             <ul>
               <li><a href="activities.html">Activities</a></li>
             </ul>
           </li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+
+          <li><a href="contact.html">Contact</a></li>
         </ul>
+
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
+      <!-- Social Media -->
       <div class="header-social-links">
-        <a href="https://www.instagram.com/dittaa.ptr?igsh=MXF6NjJ2aDI5OGtxdQ==" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/aditya-kusumaputri-a70272218/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      </div>
+        <a href="https://www.instagram.com/dittaa.ptr?igsh=MXF6NjJ2aDI5OGtxdQ==" class="instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
 
+        <a href="https://www.linkedin.com/in/aditya-kusumaputri-a70272218/" class="linkedin">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
 
     </div>
   </header>
+
 
   <main class="main">
 
@@ -81,475 +93,770 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-      </div><!-- End Section Title -->
+      </div>
+      <!-- End Section Title -->
+
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+        <div class="isotope-layout"
+          data-default-filter="*"
+          data-layout="masonry"
+          data-sort="original-order">
+
+          <!-- Portfolio Filters -->
+          <ul class="portfolio-filters isotope-filters"
+            data-aos="fade-up"
+            data-aos-delay="200">
+
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-strategy">Design UI/UX</li>
             <li data-filter=".filter-finance">Aplication</li>
             <li data-filter=".filter-operations">Website</li>
             <li data-filter=".filter-technology">Dashboard</li>
-          </ul><!-- End Portfolio Filters -->
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+          </ul>
+          <!-- End Portfolio Filters -->
+
+
+          <!-- Portfolio Items -->
+          <div class="row gy-4 isotope-container"
+            data-aos="fade-up"
+            data-aos-delay="300">
+
+
+            <!-- 1. SEHAT BERSAMA -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+
               <div class="portfolio-card">
+
                 <div class="portfolio-img">
-                  <img src="assets/img/portfolio/porto1.jpg" alt="Portfolio Item" class="img-fluid">
+
+                  <img src="assets/img/portfolio/porto1.jpg"
+                    alt="Sehat Bersama"
+                    class="img-fluid">
 
                   <div class="portfolio-overlay">
-                    <!-- Tombol untuk melihat gambar -->
+
                     <a href="assets/img/portfolio/porto1.jpg"
                       class="glightbox portfolio-lightbox">
                       <i class="bi bi-plus"></i>
                     </a>
 
-                    <!-- Tombol menuju project -->
-                    <a href="https://www.figma.com/proto/2uvLhHi92sKAeoM281IVQs/DITA-DHEA?node-id=4-867&starting-point-node-id=4%3A864&t=gigBq3IU5bHNT1xl-1">
+                    <a href="https://www.figma.com/proto/2uvLhHi92sKAeoM281IVQs/DITA-DHEA?node-id=4-867&starting-point-node-id=4%3A864&t=gigBq3IU5bHNT1xl-1"
+                      target="_blank">
                       <i class="bi bi-link-45deg"></i>
                     </a>
 
                   </div>
                 </div>
-                
+
+
                 <div class="portfolio-info">
+
                   <h4>Sehat Bersama</h4>
+
                   <p>Design aplikasi UI/UX</p>
+
                   <div class="portfolio-tags">
                     <span>Design UI/UX</span>
                   </div>
-                </div>
-              </div>
-            </div>
 
+                </div>
+
+              </div>
+
+            </div>
+            <!-- END SEHAT BERSAMA -->
+
+
+            <!-- 2. MADURA WONDERLUST -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+
               <div class="portfolio-card">
+
                 <div class="portfolio-img">
-                  <img src="assets/img/portfolio/porto2.jpg" alt="Portfolio Item" class="img-fluid">
+
+                  <img src="assets/img/portfolio/porto2.jpg"
+                    alt="Madura Wonderlust"
+                    class="img-fluid">
 
                   <div class="portfolio-overlay">
-                    <!-- Tombol untuk melihat gambar -->
+
                     <a href="assets/img/portfolio/porto2.jpg"
                       class="glightbox portfolio-lightbox">
                       <i class="bi bi-plus"></i>
                     </a>
 
-                    <!-- Tombol menuju project -->
                     <a href="https://www.figma.com/proto/teppOWcpmRtpE1DvckiHtF/madura-wanderlust?node-id=16-4&starting-point-node-id=272%3A1588&t=tBsRUTv7uviy56Lc-1"
                       target="_blank">
                       <i class="bi bi-link-45deg"></i>
                     </a>
 
                   </div>
+
                 </div>
 
+
                 <div class="portfolio-info">
+
                   <h4>Madura Wonderlust</h4>
+
                   <p>Design aplikasi UI/UX</p>
 
                   <div class="portfolio-tags">
                     <span>Design UI/UX</span>
                   </div>
-                </div>
-              </div>
-            </div>
 
+                </div>
+
+              </div>
+
+            </div>
+            <!-- END MADURA WONDERLUST -->
+
+
+            <!-- 3. INSTAGRAM JOMBANG -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+
               <div class="portfolio-card">
+
                 <div class="portfolio-img">
-                  <img src="assets/img/portfolio/Dita.jpg" alt="Portfolio Item" class="img-fluid">
+
+                  <img src="assets/img/portfolio/Dita.jpg"
+                    alt="Instagram Tour Outbound Jombang"
+                    class="img-fluid">
 
                   <div class="portfolio-overlay">
-                    <!-- Lihat gambar -->
+
                     <a href="assets/img/portfolio/Dita.jpg"
                       class="glightbox portfolio-lightbox">
                       <i class="bi bi-plus"></i>
                     </a>
 
-                    <!-- Buka Instagram -->
-                    <a href="https://www.instagram.com/touroutboundjombang?igsh=MWMxcXhjdmcxNHJheg==">
+                    <a href="https://www.instagram.com/touroutboundjombang?igsh=MWMxcXhjdmcxNHJheg=="
+                      target="_blank">
                       <i class="bi bi-instagram"></i>
                     </a>
 
                   </div>
+
                 </div>
 
+
                 <div class="portfolio-info">
+
                   <h4>Instagram @touroutboundjombang</h4>
+
                   <p>Social Media Specialist</p>
+
                   <div class="portfolio-tags">
                     <span>Instagram</span>
                   </div>
-                </div>
-              </div>
-            </div>
 
+                </div>
+
+              </div>
+
+            </div>
+            <!-- END INSTAGRAM JOMBANG -->
+
+
+            <!-- 4. INSTAGRAM TULUNGAGUNG -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+
               <div class="portfolio-card">
+
                 <div class="portfolio-img">
-                  <img src="assets/img/portfolio/ig.jpg" alt="Portfolio Item" class="img-fluid">
+
+                  <img src="assets/img/portfolio/ig.jpg"
+                    alt="Instagram Tour Outbound Tulungagung"
+                    class="img-fluid">
 
                   <div class="portfolio-overlay">
-                    <!-- Lihat gambar -->
+
                     <a href="assets/img/portfolio/ig.jpg"
                       class="glightbox portfolio-lightbox">
                       <i class="bi bi-plus"></i>
                     </a>
 
-                    <!-- Buka Instagram -->
-                    <a href="https://www.instagram.com/touroutboundtulungagung?igsh=MWMwaWJza3liNjA2cA==">
+                    <a href="https://www.instagram.com/touroutboundtulungagung?igsh=MWMwaWJza3liNjA2cA=="
+                      target="_blank">
                       <i class="bi bi-instagram"></i>
                     </a>
 
                   </div>
+
                 </div>
 
+
                 <div class="portfolio-info">
+
                   <h4>Instagram @touroutboundtulungagung</h4>
+
                   <p>Social Media Specialist</p>
+
                   <div class="portfolio-tags">
                     <span>Instagram</span>
                   </div>
+
                 </div>
+
               </div>
+
             </div>
-            
-                   
+            <!-- END INSTAGRAM TULUNGAGUNG -->
+
+
+            <!-- 5. TIKTOK TULUNGAGUNG -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+
               <div class="portfolio-card">
+
                 <div class="portfolio-img">
-                <img src="assets/img/portfolio/tiktok1.jpg" alt="Portfolio Item" class="img-fluid">
-                <div class="portfolio-overlay">
-                    <!-- Lihat gambar -->
+
+                  <img src="assets/img/portfolio/tiktok1.jpg"
+                    alt="TikTok Outbound Tulungagung"
+                    class="img-fluid">
+
+                  <div class="portfolio-overlay">
+
                     <a href="assets/img/portfolio/tiktok1.jpg"
                       class="glightbox portfolio-lightbox">
                       <i class="bi bi-plus"></i>
                     </a>
 
-                    <!-- Buka Instagram -->
-                    <a href="https://www.tiktok.com/@outbound.tulungagung?_r=1&_t=ZS-97zPEjlgrHY">
-                      <i class="bi bi-instagram"></i>
+                    <a href="https://www.tiktok.com/@outbound.tulungagung?_r=1&_t=ZS-97zPEjlgrHY"
+                      target="_blank">
+                      <i class="bi bi-tiktok"></i>
                     </a>
 
                   </div>
+
                 </div>
+
+
                 <div class="portfolio-info">
-                  <h4>Tiktok Outbound.Tulungagung </h4>
-                  <p>Social Media Specialis</p>
+
+                  <h4>Tiktok Outbound.Tulungagung</h4>
+
+                  <p>Social Media Specialist</p>
+
                   <div class="portfolio-tags">
+                    <span>TikTok</span>
                   </div>
-                </div>
-              </div>
-            </div>
 
+                </div>
+
+              </div>
+
+            </div>
+            <!-- END TIKTOK TULUNGAGUNG -->
+
+
+            <!-- 6. TIKTOK JOMBANG -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+
               <div class="portfolio-card">
+
                 <div class="portfolio-img">
-                  <img src="assets/img/portfolio/tiktok2.jpg" alt="Portfolio Item" class="img-fluid">
+
+                  <img src="assets/img/portfolio/tiktok2.jpg"
+                    alt="TikTok Outbound Jombang"
+                    class="img-fluid">
 
                   <div class="portfolio-overlay">
-                      <!-- Lihat gambar -->
-                      <a href="assets/img/portfolio/tiktok2.jpg"
-                        class="glightbox portfolio-lightbox">
-                        <i class="bi bi-plus"></i>
-                      </a>
 
-                      <!-- Buka Instagram -->
-                      <a href="https://www.tiktok.com/@outbound.jombang?_r=1&_t=ZS-97zPEixiUia"
-                        target="_blank">
-                        <i class="bi bi-instagram"></i>
-                      </a>
+                    <a href="assets/img/portfolio/tiktok2.jpg"
+                      class="glightbox portfolio-lightbox">
+                      <i class="bi bi-plus"></i>
+                    </a>
 
-                    </div>
-                </div>
-                  <div class="portfolio-info">
-                    <h4>Tiktok Outbound.Jombang </h4>
-                    <p>Social Media Specialis</p>
-                    <div class="portfolio-tags">
-                    </div>
+                    <a href="https://www.tiktok.com/@outbound.jombang?_r=1&_t=ZS-97zPEixiUia"
+                      target="_blank">
+                      <i class="bi bi-tiktok"></i>
+                    </a>
+
                   </div>
+
+                </div>
+
+
+                <div class="portfolio-info">
+
+                  <h4>Tiktok Outbound.Jombang</h4>
+
+                  <p>Social Media Specialist</p>
+
+                  <div class="portfolio-tags">
+                    <span>TikTok</span>
+                  </div>
+
+                </div>
+
               </div>
+
             </div>
+            <!-- END TIKTOK JOMBANG -->
 
 
+            <!-- 7. MADURA WONDERLUST APPLICATION -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-finance">
+
               <div class="portfolio-card">
+
                 <div class="portfolio-img">
-                  <img src="assets/img/portfolio/porto3.jpg" alt="Portfolio Item" class="img-fluid">
+
+                  <img src="assets/img/portfolio/porto3.jpg"
+                    alt="Madura Wonderlust Application"
+                    class="img-fluid">
 
                   <div class="portfolio-overlay">
-                    <!-- Tombol untuk melihat gambar -->
+
                     <a href="assets/img/portfolio/porto3.jpg"
                       class="glightbox portfolio-lightbox">
                       <i class="bi bi-plus"></i>
                     </a>
 
-                    <!-- Tombol menuju project -->
                     <a href="https://www.figma.com/proto/teppOWcpmRtpE1DvckiHtF/madura-wanderlust?node-id=16-4&starting-point-node-id=272%3A1588&t=tBsRUTv7uviy56Lc-1"
                       target="_blank">
                       <i class="bi bi-link-45deg"></i>
                     </a>
 
                   </div>
+
                 </div>
+
+
                 <div class="portfolio-info">
+
                   <h4>Madura Wonderlust Aplication</h4>
+
                   <p>Mobile Aplication</p>
+
                   <div class="portfolio-tags">
                     <span>Aplication</span>
                   </div>
-                </div>
-              </div>
-            </div>
 
+                </div>
+
+              </div>
+
+            </div>
+            <!-- END MADURA WONDERLUST APPLICATION -->
+
+
+            <!-- 8. FORECASTING TOURIST -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-operations">
+
               <div class="portfolio-card">
+
                 <div class="portfolio-img">
-                  <img src="assets/img/portfolio/porto4.jpg" alt="Portfolio Item" class="img-fluid">
+
+                  <img src="assets/img/portfolio/porto4.jpg"
+                    alt="Forecasting Tourist Visit in Surabaya"
+                    class="img-fluid">
 
                   <div class="portfolio-overlay">
-                    <!-- Tombol untuk melihat gambar -->
+
                     <a href="assets/img/portfolio/porto4.jpg"
                       class="glightbox portfolio-lightbox">
                       <i class="bi bi-plus"></i>
                     </a>
 
-                    <!-- Tombol menuju project -->
-                  
                   </div>
+
                 </div>
+
+
                 <div class="portfolio-info">
-                   <h4>Forcasting Tourist Visit in Surabaya</h4>
+
+                  <h4>Forcasting Tourist Visit in Surabaya</h4>
+
                   <p>Website Forcasting</p>
+
                   <div class="portfolio-tags">
                     <span>Website</span>
                   </div>
-                </div>
-              </div>
-            </div>
 
+                </div>
+
+              </div>
+
+            </div>
+            <!-- END FORECASTING TOURIST -->
+
+
+            <!-- 9. SIMALIK -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+
               <div class="portfolio-card">
+
                 <div class="portfolio-img">
-                  <img src="assets/img/portfolio/simalik.jpg" alt="Portfolio Item" class="img-fluid">
+
+                  <img src="assets/img/portfolio/simalik.jpg"
+                    alt="SIMALIK"
+                    class="img-fluid">
 
                   <div class="portfolio-overlay">
-                    <!-- Tombol untuk melihat gambar -->
+
                     <a href="assets/img/portfolio/simalik.jpg"
                       class="glightbox portfolio-lightbox">
                       <i class="bi bi-plus"></i>
                     </a>
 
-                    <!-- Tombol menuju project -->
-                    <a href="https://www.figma.com/proto/8mUxDRTKfHklA8qUKBjcgv/SIMALIK?node-id=1094-32&starting-point-node-id=1094%3A32&t=HZ3UKQPo4dVv1bqU-1">
+                    <a href="https://www.figma.com/proto/8mUxDRTKfHklA8qUKBjcgv/SIMALIK?node-id=1094-32&starting-point-node-id=1094%3A32&t=HZ3UKQPo4dVv1bqU-1"
+                      target="_blank">
                       <i class="bi bi-link-45deg"></i>
                     </a>
 
                   </div>
+
                 </div>
+
+
                 <div class="portfolio-info">
+
                   <h4>SIMALIK</h4>
+
                   <p>Design UI/UX Website</p>
+
                   <div class="portfolio-tags">
                     <span>Design UI/UX</span>
                   </div>
-                </div>
-              </div>
-            </div>
 
+                </div>
+
+              </div>
+
+            </div>
+            <!-- END SIMALIK -->
+
+
+            <!-- 10. WEBSITE KOTA KEDIRI -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+
               <div class="portfolio-card">
+
                 <div class="portfolio-img">
-                  <img src="assets/img/portfolio/porto6.jpg" alt="Portfolio Item" class="img-fluid">
+
+                  <img src="assets/img/portfolio/porto6.jpg"
+                    alt="Website Kota Kediri"
+                    class="img-fluid">
 
                   <div class="portfolio-overlay">
-                    <!-- Tombol untuk melihat gambar -->
+
                     <a href="assets/img/portfolio/porto6.jpg"
                       class="glightbox portfolio-lightbox">
                       <i class="bi bi-plus"></i>
                     </a>
 
-                    <!-- Tombol menuju project -->
-                    <a href="https://www.figma.com/proto/f2er4kEfHU7ciBcy9fXesz/Kediri-Kota?node-id=131-98&starting-point-node-id=131%3A98&t=qh0afFu2TgwQgfMk-1">
+                    <a href="https://www.figma.com/proto/f2er4kEfHU7ciBcy9fXesz/Kediri-Kota?node-id=131-98&starting-point-node-id=131%3A98&t=qh0afFu2TgwQgfMk-1"
+                      target="_blank">
                       <i class="bi bi-link-45deg"></i>
                     </a>
 
                   </div>
+
                 </div>
+
+
                 <div class="portfolio-info">
+
                   <h4>Website Kota Kediri</h4>
+
                   <p>Design UI/UX Website</p>
+
                   <div class="portfolio-tags">
                     <span>Design UI/UX</span>
                   </div>
+
                 </div>
+
               </div>
+
             </div>
-           
-            
+            <!-- END WEBSITE KOTA KEDIRI -->
+
+
+            <!-- 11. PECUT -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+
               <div class="portfolio-card">
+
                 <div class="portfolio-img">
-                  <img src="assets/img/portfolio/porto7.jpg" alt="Portfolio Item" class="img-fluid">
+
+                  <img src="assets/img/portfolio/porto7.jpg"
+                    alt="PECUT"
+                    class="img-fluid">
 
                   <div class="portfolio-overlay">
-                    <!-- Tombol untuk melihat gambar -->
+
                     <a href="assets/img/portfolio/porto7.jpg"
                       class="glightbox portfolio-lightbox">
                       <i class="bi bi-plus"></i>
                     </a>
 
-                    <!-- Tombol menuju project -->
-                    <a href="https://www.figma.com/proto/J1FL6xBosFHjVgrnkzh22p/Pecut?node-id=23-23&starting-point-node-id=23%3A23&t=ZSi4xjakEIb3ld5N-1">
+                    <a href="https://www.figma.com/proto/J1FL6xBosFHjVgrnkzh22p/Pecut?node-id=23-23&starting-point-node-id=23%3A23&t=ZSi4xjakEIb3ld5N-1"
+                      target="_blank">
                       <i class="bi bi-link-45deg"></i>
                     </a>
 
                   </div>
+
                 </div>
+
+
                 <div class="portfolio-info">
+
                   <h4>PECUT</h4>
+
                   <p>Design UI/UX Website</p>
+
                   <div class="portfolio-tags">
                     <span>Design UI/UX</span>
                   </div>
+
                 </div>
+
               </div>
+
             </div>
-
-            
-                <div class="portfolio-info">
-                  <h4>Ikanku Bojnegoro</h4>
-                  <p>Design UI/UX Website</p>
-                  <div class="portfolio-tags">
-                    <span>Design UI/UX</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <!-- END PECUT -->
 
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-technology">
+            <!-- 12. IKANKU BOJONEGORO -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+
               <div class="portfolio-card">
+
                 <div class="portfolio-img">
-                  <img src="assets/img/portfolio/porto9.jpg" alt="Portfolio Item" class="img-fluid">
+
+                  <img src="assets/img/portfolio/porto8.jpg"
+                    alt="Ikanku Bojonegoro"
+                    class="img-fluid">
+
                   <div class="portfolio-overlay">
-                    <a href="assets/img/portfolio/porto9.jpg" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                   </div>
+
+                    <a href="assets/img/portfolio/porto8.jpg"
+                      class="glightbox portfolio-lightbox">
+                      <i class="bi bi-plus"></i>
+                    </a>
+
+                  </div>
+
                 </div>
+
+
                 <div class="portfolio-info">
+
+                  <h4>Ikanku Bojnegoro</h4>
+
+                  <p>Design UI/UX Website</p>
+
+                  <div class="portfolio-tags">
+                    <span>Design UI/UX</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+            <!-- END IKANKU BOJONEGORO -->
+
+
+            <!-- 13. DASHBOARD HIV -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-technology">
+
+              <div class="portfolio-card">
+
+                <div class="portfolio-img">
+
+                  <img src="assets/img/portfolio/porto9.jpg"
+                    alt="Dashboard HIV Kota Surabaya"
+                    class="img-fluid">
+
+                  <div class="portfolio-overlay">
+
+                    <a href="assets/img/portfolio/porto9.jpg"
+                      class="glightbox portfolio-lightbox">
+                      <i class="bi bi-plus"></i>
+                    </a>
+
+                  </div>
+
+                </div>
+
+
+                <div class="portfolio-info">
+
                   <h4>Dashboard HIV Kota Surabaya</h4>
+
                   <p>Dashboard POWER BI</p>
+
                   <div class="portfolio-tags">
                     <span>Dashboard</span>
                   </div>
-                </div>
-              </div>
-            </div>
-         
 
-          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+                </div>
+
+              </div>
+
+            </div>
+            <!-- END DASHBOARD HIV -->
+
+
+            <!-- 14. THE COFFEE SHOP -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+
               <div class="portfolio-card">
+
                 <div class="portfolio-img">
-                  <img src="assets/img/portfolio/Dita.jpg" alt="Portfolio Item" class="img-fluid">
+
+                  <!-- SUDAH DIPERBAIKI -->
+                  <img src="assets/img/portfolio/utama1.png"
+                    alt="The Coffee Shop"
+                    class="img-fluid">
 
                   <div class="portfolio-overlay">
-                    <!-- Lihat gambar -->
+
+                    <!-- Gambar yang dibuka juga utama1.png -->
                     <a href="assets/img/portfolio/utama1.png"
                       class="glightbox portfolio-lightbox">
                       <i class="bi bi-plus"></i>
                     </a>
 
-                    <!-- Buka Instagram -->
-                    <a href="https://drive.google.com/drive/folders/1y23DqP5s9pqxQvHX1QvuNINQ8grW3Ml-?usp=sharing">
-
+                    <a href="https://drive.google.com/drive/folders/1y23DqP5s9pqxQvHX1QvuNINQ8grW3Ml-?usp=sharing"
+                      target="_blank">
+                      <i class="bi bi-link-45deg"></i>
                     </a>
 
                   </div>
+
                 </div>
 
+
                 <div class="portfolio-info">
-                  <h4>The Coffee Shop </h4>
+
+                  <h4>The Coffee Shop</h4>
+
                   <p>Design Konten Instagram</p>
+
                   <div class="portfolio-tags">
                     <span>Instagram</span>
                   </div>
-                </div>
-              </div>
-            </div>
 
-             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+                </div>
+
+              </div>
+
+            </div>
+            <!-- END THE COFFEE SHOP -->
+
+
+            <!-- 15. THE SWEET -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+
               <div class="portfolio-card">
+
                 <div class="portfolio-img">
-                  <img src="assets/img/portfolio/Dita.jpg" alt="Portfolio Item" class="img-fluid">
+
+                  <!-- SUDAH DIPERBAIKI -->
+                  <img src="assets/img/portfolio/utama2.png"
+                    alt="The Sweet"
+                    class="img-fluid">
 
                   <div class="portfolio-overlay">
-                    <!-- Lihat gambar -->
+
+                    <!-- Gambar yang dibuka juga utama2.png -->
                     <a href="assets/img/portfolio/utama2.png"
                       class="glightbox portfolio-lightbox">
                       <i class="bi bi-plus"></i>
                     </a>
 
-                    <!-- Buka Instagram -->
-                    <a href="https://drive.google.com/drive/folders/1y23DqP5s9pqxQvHX1QvuNINQ8grW3Ml-?usp=sharing">
-
+                    <a href="https://drive.google.com/drive/folders/1y23DqP5s9pqxQvHX1QvuNINNQ8grW3Ml-?usp=sharing"
+                      target="_blank">
+                      <i class="bi bi-link-45deg"></i>
                     </a>
 
                   </div>
+
                 </div>
 
+
                 <div class="portfolio-info">
+
                   <h4>The Sweet</h4>
+
                   <p>Design Konten Instagram</p>
+
                   <div class="portfolio-tags">
                     <span>Instagram</span>
                   </div>
+
                 </div>
+
               </div>
+
             </div>
-           </div><!-- End Portfolio Items Container -->
+            <!-- END THE SWEET -->
+
+
+          </div>
+          <!-- End Portfolio Items Container -->
+
 
         </div>
 
-        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
-          <a href="#portfolio" class="btn btn-primary">View All Case Studies</a>
+
+        <!-- View All -->
+        <div class="text-center mt-5"
+          data-aos="fade-up"
+          data-aos-delay="400">
+
+          <a href="#portfolio" class="btn btn-primary">
+            View All Case Studies
+          </a>
+
         </div>
+
 
       </div>
 
-    </section><!-- /Portfolio Section -->
+    </section>
+    <!-- /Portfolio Section -->
 
   </main>
 
+
+  <!-- Footer -->
   <footer id="footer" class="footer">
 
     <div class="container">
-      <!--
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">FolioOne</strong> <span>All Rights Reserved<br></span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
-    -->
+
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Aditya Kusumaputri 
+        Aditya Kusumaputri
+      </div>
+
     </div>
 
   </footer>
 
+
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#"
+    id="scroll-top"
+    class="scroll-top d-flex align-items-center justify-content-center">
+
+    <i class="bi bi-arrow-up-short"></i>
+
+  </a>
+
 
   <!-- Preloader -->
   <div id="preloader"></div>
+
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
